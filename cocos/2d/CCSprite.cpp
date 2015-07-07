@@ -308,26 +308,6 @@ Sprite::~Sprite(void)
  * Texture methods
  */
 
-/*
- * This array is the data of a white image with 2 by 2 dimension.
- * It's used for creating a default texture when sprite's texture is set to nullptr.
- * Supposing codes as follows:
- *
- *   auto sp = new (std::nothrow) Sprite();
- *   sp->init();  // Texture was set to nullptr, in order to make opacity and color to work correctly, we need to create a 2x2 white texture.
- *
- * The test is in "TestCpp/SpriteTest/Sprite without texture".
- */
-static unsigned char cc_2x2_white_image[] = {
-    // RGBA8888
-    0xFF, 0xFF, 0xFF, 0xFF,
-    0xFF, 0xFF, 0xFF, 0xFF,
-    0xFF, 0xFF, 0xFF, 0xFF,
-    0xFF, 0xFF, 0xFF, 0xFF
-};
-
-#define CC_2x2_WHITE_IMAGE_KEY  "/cc_2x2_white_image"
-
 // MARK: texture
 void Sprite::setTexture(const std::string &filename)
 {
@@ -346,24 +326,6 @@ void Sprite::setTexture(Texture2D *texture)
     CCASSERT(! _batchNode || texture->getName() == _batchNode->getTexture()->getName(), "CCSprite: Batched sprites should use the same texture as the batchnode");
     // accept texture==nil as argument
     CCASSERT( !texture || dynamic_cast<Texture2D*>(texture), "setTexture expects a Texture2D. Invalid argument");
-
-    if (texture == nullptr)
-    {
-        // Gets the texture by key firstly.
-        texture = Director::getInstance()->getTextureCache()->getTextureForKey(CC_2x2_WHITE_IMAGE_KEY);
-
-        // If texture wasn't in cache, create it from RAW data.
-        if (texture == nullptr)
-        {
-            Image* image = new (std::nothrow) Image();
-            bool isOK = image->initWithRawData(cc_2x2_white_image, sizeof(cc_2x2_white_image), 2, 2, 8);
-            CC_UNUSED_PARAM(isOK);
-            CCASSERT(isOK, "The 2x2 empty texture was created unsuccessfully.");
-
-            texture = Director::getInstance()->getTextureCache()->addImage(image, CC_2x2_WHITE_IMAGE_KEY);
-            CC_SAFE_RELEASE(image);
-        }
-    }
 
     if (!_batchNode && _texture != texture)
     {
@@ -657,6 +619,7 @@ void Sprite::updateTransform(void)
 
 void Sprite::draw(Renderer *renderer, const Mat4 &transform, uint32_t flags)
 {
+    if(!_texture) return;
 #if CC_USE_CULLING
     // Don't do calculate the culling if the transform was not updated
     _insideBounds = (flags & FLAGS_TRANSFORM_DIRTY) ? renderer->checkVisibility(transform, _contentSize) : _insideBounds;
@@ -1042,6 +1005,7 @@ bool Sprite::isFrameDisplayed(SpriteFrame *frame) const
     Rect r = frame->getRect();
 
     return (r.equals(_rect) &&
+            _texture &&
             frame->getTexture()->getName() == _texture->getName() &&
             frame->getOffset().equals(_unflippedOffsetPositionFromCenter));
 }
@@ -1117,7 +1081,7 @@ std::string Sprite::getDescription() const
     if( _batchNode )
         texture_id = _batchNode->getTextureAtlas()->getTexture()->getName();
     else
-        texture_id = _texture->getName();
+        texture_id = _texture ? _texture->getName() : texture_id;
     return StringUtils::format("<Sprite | Tag = %d, TextureID = %d>", _tag, texture_id );
 }
 
