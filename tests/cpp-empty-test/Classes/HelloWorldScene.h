@@ -17,6 +17,15 @@ public:
     
     // implement the "static node()" method manually
     CREATE_FUNC(HelloWorld);
+    
+    virtual void update(float dt);
+    
+private:
+    
+    cocos2d::Size _visibleSize;
+    
+    cocos2d::Sprite* sprite1;
+    cocos2d::Sprite* sprite2;
 };
 
 #endif // __HELLOWORLD_SCENE_H__

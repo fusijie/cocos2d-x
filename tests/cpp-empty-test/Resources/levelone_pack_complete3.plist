@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>1_bg_ironfloor_mid_.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{250,30}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{250,30}}</string>
+                <key>sourceSize</key>
+                <string>{250,30}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>levelone_pack_complete3.png</string>
+            <key>size</key>
+            <string>{254,34}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:4ebf1705863e06151d5b5c4cc4d6a7a6:c598d69ef1379b3bf0a57a6a5203b0b9:1a20c183aa5b927a736fa1328b959501$</string>
+            <key>textureFileName</key>
+            <string>levelone_pack_complete3.png</string>
+        </dict>
+    </dict>
+</plist>
