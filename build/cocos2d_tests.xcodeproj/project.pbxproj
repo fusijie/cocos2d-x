@@ -834,6 +834,8 @@
 		A5030C3619D059DA000E78E7 /* OpenURLTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5030C3319D059DA000E78E7 /* OpenURLTest.cpp */; };
 		B2507B6B192589AF00FA4972 /* Shaders3D in Resources */ = {isa = PBXBuildFile; fileRef = B2507B6A192589AF00FA4972 /* Shaders3D */; };
 		B2507B6C192589AF00FA4972 /* Shaders3D in Resources */ = {isa = PBXBuildFile; fileRef = B2507B6A192589AF00FA4972 /* Shaders3D */; };
+		B2D156F81B85821300E7BA24 /* PerformanceParticleTest2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D156F61B85821300E7BA24 /* PerformanceParticleTest2.cpp */; };
+		B2D156F91B85821300E7BA24 /* PerformanceParticleTest2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D156F61B85821300E7BA24 /* PerformanceParticleTest2.cpp */; };
 		B603F1AF1AC8EA4E00A9579C /* TerrainTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B603F1AD1AC8EA4E00A9579C /* TerrainTest.cpp */; };
 		B603F1B01AC8EA4E00A9579C /* TerrainTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B603F1AD1AC8EA4E00A9579C /* TerrainTest.cpp */; };
 		B603F1B41AC8FBFB00A9579C /* TerrainTest in Resources */ = {isa = PBXBuildFile; fileRef = B603F1B31AC8FBFB00A9579C /* TerrainTest */; };
@@ -1793,6 +1795,8 @@
 		A5030C3319D059DA000E78E7 /* OpenURLTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenURLTest.cpp; path = OpenURLTest/OpenURLTest.cpp; sourceTree = "<group>"; };
 		A5030C3419D059DA000E78E7 /* OpenURLTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenURLTest.h; path = OpenURLTest/OpenURLTest.h; sourceTree = "<group>"; };
 		B2507B6A192589AF00FA4972 /* Shaders3D */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Shaders3D; path = "../tests/cpp-tests/Resources/Shaders3D"; sourceTree = "<group>"; };
+		B2D156F61B85821300E7BA24 /* PerformanceParticleTest2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PerformanceParticleTest2.cpp; sourceTree = "<group>"; };
+		B2D156F71B85821300E7BA24 /* PerformanceParticleTest2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerformanceParticleTest2.h; sourceTree = "<group>"; };
 		B603F1AD1AC8EA4E00A9579C /* TerrainTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TerrainTest.cpp; path = TerrainTest/TerrainTest.cpp; sourceTree = "<group>"; };
 		B603F1AE1AC8EA4E00A9579C /* TerrainTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TerrainTest.h; path = TerrainTest/TerrainTest.h; sourceTree = "<group>"; };
 		B603F1B31AC8FBFB00A9579C /* TerrainTest */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TerrainTest; path = "../tests/cpp-tests/Resources/TerrainTest"; sourceTree = "<group>"; };
@@ -3002,6 +3006,8 @@
 		1AC35AC118CECF0C00F37B72 /* PerformanceTest */ = {
 			isa = PBXGroup;
 			children = (
+				B2D156F61B85821300E7BA24 /* PerformanceParticleTest2.cpp */,
+				B2D156F71B85821300E7BA24 /* PerformanceParticleTest2.h */,
 				B6337DF51ABA9B44005AEF24 /* PerformanceParticle3DTest.cpp */,
 				B6337DF61ABA9B44005AEF24 /* PerformanceParticle3DTest.h */,
 				1AC35AC218CECF0C00F37B72 /* PerformanceAllocTest.cpp */,
@@ -4982,6 +4988,7 @@
 				1AC35BF718CECF0C00F37B72 /* SocketIOTest.cpp in Sources */,
 				1AC35C4F18CECF0C00F37B72 /* SpriteTest.cpp in Sources */,
 				29080D9D191B595E0066F8DF /* CustomParticleWidgetReader.cpp in Sources */,
+				B2D156F81B85821300E7BA24 /* PerformanceParticleTest2.cpp in Sources */,
 				1AC35C0318CECF0C00F37B72 /* FileUtilsTest.cpp in Sources */,
 				B6C039D919C95D83007207DC /* LightTest.cpp in Sources */,
 				1AC35B5B18CECF0C00F37B72 /* CurlTest.cpp in Sources */,
@@ -5262,6 +5269,7 @@
 				1AC35C2418CECF0C00F37B72 /* ParticleTest.cpp in Sources */,
 				1AC35C6218CECF0C00F37B72 /* TouchesTest.cpp in Sources */,
 				29080DB0191B595E0066F8DF /* UIImageViewTest_Editor.cpp in Sources */,
+				B2D156F91B85821300E7BA24 /* PerformanceParticleTest2.cpp in Sources */,
 				1AC35C6418CECF0C00F37B72 /* TransitionsTest.cpp in Sources */,
 				1AC35C4418CECF0C00F37B72 /* RotateWorldTest.cpp in Sources */,
 				1AC35B2618CECF0C00F37B72 /* ActionsProgressTest.cpp in Sources */,
