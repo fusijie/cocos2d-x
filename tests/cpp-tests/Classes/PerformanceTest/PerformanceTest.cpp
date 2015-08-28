@@ -13,6 +13,7 @@
 #include "PerformanceScenarioTest.h"
 #include "PerformanceCallbackTest.h"
 #include "PerformanceMathTest.h"
+#include "PerformanceParticleTest2.h"
 
 USING_NS_CC;
 
@@ -21,6 +22,7 @@ PerformanceTests::PerformanceTests()
     addTest("Alloc Test", [](){ return new (std::nothrow) PerformceAllocTests; });
     addTest("NodeChildren Test", [](){ return new (std::nothrow) PerformceNodeChildrenTests; });
     addTest("Particle Test", [](){ return new (std::nothrow) PerformceParticleTests; });
+    addTest("Particle Test v2", [](){ return new (std::nothrow) PerformanceParticleTests2; });
     addTest("Particle3D Perf Test", [](){ return new (std::nothrow) PerformceParticle3DTests; });
     addTest("Sprite Perf Test", [](){ return new (std::nothrow) PerformceSpriteTests; });
     addTest("Texture Perf Test", [](){ return new (std::nothrow) PerformceTextureTests; });

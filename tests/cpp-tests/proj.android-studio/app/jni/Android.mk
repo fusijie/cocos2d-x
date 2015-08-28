@@ -46,6 +46,7 @@ LOCAL_SRC_FILES := main.cpp \
 ../../../Classes/CurlTest/CurlTest.cpp \
 ../../../Classes/CurrentLanguageTest/CurrentLanguageTest.cpp \
 ../../../Classes/DataVisitorTest/DataVisitorTest.cpp \
+../../../Classes/DownloaderTest/DownloaderTest.cpp \
 ../../../Classes/DrawPrimitivesTest/DrawPrimitivesTest.cpp \
 ../../../Classes/EffectsAdvancedTest/EffectsAdvancedTest.cpp \
 ../../../Classes/EffectsTest/EffectsTest.cpp \
@@ -113,6 +114,7 @@ LOCAL_SRC_FILES := main.cpp \
 ../../../Classes/PerformanceTest/PerformanceNodeChildrenTest.cpp \
 ../../../Classes/PerformanceTest/PerformanceParticle3DTest.cpp \
 ../../../Classes/PerformanceTest/PerformanceParticleTest.cpp \
+../../../Classes/PerformanceTest/PerformanceParticleTest2.cpp \
 ../../../Classes/PerformanceTest/PerformanceRendererTest.cpp \
 ../../../Classes/PerformanceTest/PerformanceScenarioTest.cpp \
 ../../../Classes/PerformanceTest/PerformanceSpriteTest.cpp \
