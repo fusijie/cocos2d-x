@@ -887,6 +887,8 @@
 		826294431AAF071500CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 826294421AAF071500CB7CF7 /* Security.framework */; };
 		850F8A241B5F3A4F00780603 /* Bug-12847.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 850F8A221B5F3A4F00780603 /* Bug-12847.cpp */; };
 		850F8A251B5F3A4F00780603 /* Bug-12847.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 850F8A221B5F3A4F00780603 /* Bug-12847.cpp */; };
+		8530A5271B93F6F0004EF47C /* stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 8530A5261B93F6F0004EF47C /* stars.png */; };
+		8530A5281B93F6F0004EF47C /* stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 8530A5261B93F6F0004EF47C /* stars.png */; };
 		94D793D91B4B7A3600F60F10 /* Bug-CCDrawNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94D793D51B4B7A3600F60F10 /* Bug-CCDrawNode.cpp */; };
 		94D793DA1B4B7A3600F60F10 /* Bug-CCDrawNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94D793D51B4B7A3600F60F10 /* Bug-CCDrawNode.cpp */; };
 		94D793DB1B4B7A3600F60F10 /* Bug-PageViewLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94D793D71B4B7A3600F60F10 /* Bug-PageViewLayout.cpp */; };
@@ -1969,6 +1971,7 @@
 		826294421AAF071500CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		850F8A221B5F3A4F00780603 /* Bug-12847.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Bug-12847.cpp"; sourceTree = "<group>"; };
 		850F8A231B5F3A4F00780603 /* Bug-12847.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bug-12847.h"; sourceTree = "<group>"; };
+		8530A5261B93F6F0004EF47C /* stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stars.png; sourceTree = "<group>"; };
 		94D793D51B4B7A3600F60F10 /* Bug-CCDrawNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Bug-CCDrawNode.cpp"; sourceTree = "<group>"; };
 		94D793D61B4B7A3600F60F10 /* Bug-CCDrawNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bug-CCDrawNode.h"; sourceTree = "<group>"; };
 		94D793D71B4B7A3600F60F10 /* Bug-PageViewLayout.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Bug-PageViewLayout.cpp"; sourceTree = "<group>"; };
@@ -2545,6 +2548,7 @@
 		1AC358FD18CEC1EF00F37B72 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8530A5261B93F6F0004EF47C /* stars.png */,
 				1AC358FE18CEC1FB00F37B72 /* bang.png */,
 				1AC358FF18CEC1FB00F37B72 /* fonts */,
 				1AC3590018CEC1FB00F37B72 /* ipad */,
@@ -4881,6 +4885,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AC3590918CEC1FB00F37B72 /* ipadhd in Resources */,
+				8530A5271B93F6F0004EF47C /* stars.png in Resources */,
 				1AC358F518CEC1D400F37B72 /* InfoPlist.strings in Resources */,
 				1AC3590318CEC1FB00F37B72 /* bang.png in Resources */,
 				1AC3590718CEC1FB00F37B72 /* ipad in Resources */,
@@ -4922,6 +4927,7 @@
 				1AC358E218CEC1CB00F37B72 /* Icon-144.png in Resources */,
 				1AC3590618CEC1FB00F37B72 /* fonts in Resources */,
 				1AC358E718CEC1CB00F37B72 /* Icon-72.png in Resources */,
+				8530A5281B93F6F0004EF47C /* stars.png in Resources */,
 				1AC358E918CEC1CB00F37B72 /* Icon-80.png in Resources */,
 				1AC3590818CEC1FB00F37B72 /* ipad in Resources */,
 				1AC358E318CEC1CB00F37B72 /* Icon-152.png in Resources */,

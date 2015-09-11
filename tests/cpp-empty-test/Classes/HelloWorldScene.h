@@ -15,6 +15,17 @@ public:
 
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
+    
+    void initParticleTest();
+    void createParticleSystem(int count);
+    void updateQuantityLabel();
+    
+    HelloWorld();
+    ~HelloWorld();
+    
+private:
+    cocos2d::Vector< cocos2d::ParticleSystem* > _ps;
+    int _quantityParticles;
 };
 
 #endif // __HELLOWORLD_SCENE_H__
